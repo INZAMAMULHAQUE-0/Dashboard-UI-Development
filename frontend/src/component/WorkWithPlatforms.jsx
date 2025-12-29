@@ -60,20 +60,21 @@ const styles = {
     gap: '8px',
   },
   upBadge: {
-    background: 'linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%)',
+    background: '#c3335e',
     padding: '4px 10px',
     borderRadius: '10px',
     fontSize: '12px',
-    color: '#DC2626',
+    color: '#FFFFFF',
     fontWeight: '600',
     display: 'flex',
     alignItems: 'center',
     gap: '2px',
+    height: '22px',
   },
   topAmount: {
     fontSize: '15px',
     fontWeight: '700',
-    color: '#10B981',
+    color: '#FFFFFF',
   },
   content: {
     display: 'grid',
@@ -82,7 +83,7 @@ const styles = {
     alignItems: 'stretch',
   },
   dribbbleCard: {
-    background: 'linear-gradient(135deg, #f4ebf5 0%, #fbedeb 100%)',
+    background: 'linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%)',
     borderRadius: '16px',
     padding: '16px',
     display: 'flex',
@@ -265,18 +266,25 @@ export default function WorkWithPlatforms() {
             transition={{ delay: 0.3 }}
           >
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M5 2L8 6H2L5 2Z" fill="#DC2626"/>
+              <path d="M5 2L8 6H2L5 2Z" fill="#FFFFFF"/>
             </svg>
             3
           </motion.span>
-          <motion.span 
-            style={styles.topAmount}
+          <motion.div 
+            style={{
+              background: '#c3335e',
+              padding: '4px 10px',
+              borderRadius: '10px',
+              height: '22px',
+              display: 'flex',
+              alignItems: 'center',
+            }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            $156,841
-          </motion.span>
+            <span style={styles.topAmount}>$156,841</span>
+          </motion.div>
         </div>
       </div>
 
@@ -292,7 +300,7 @@ export default function WorkWithPlatforms() {
         >
           <div style={styles.dribbbleHeader}>
             <img 
-              src="https://cdn.worldvectorlogo.com/logos/dribbble-icon-1.svg" 
+              src="https://png.pngtree.com/png-vector/20190110/ourlarge/pngtree-vector-basket-ball-icon-png-image_312695.jpg" 
               alt="Dribbble" 
               style={styles.dribbbleIcon}
             />

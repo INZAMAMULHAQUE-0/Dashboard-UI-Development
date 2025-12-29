@@ -14,10 +14,17 @@ export default function IconSidebar() {
         {/* Logo/Home */}
         <motion.button 
           className="icon-sidebar-btn logo-btn"
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.0 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => window.location.reload()}
+          style={{ cursor: 'pointer' }}
         >
-          <div className="icon-logo">C</div>
+          <img 
+            src="https://cdn-icons-png.flaticon.com/512/3096/3096988.png" 
+            alt="Logo" 
+            className="icon-sidebar-img"
+            style={{ width: '50px', height: '40px', borderRadius: '100px' }}
+          />
         </motion.button>
 
         {/* Cloud/Refresh */}

@@ -251,9 +251,10 @@ export function PlatformValueChart() {
   return (
     <motion.div 
       style={{
-        background: '#F8F9FA',
+        background: '#f0f0f0',
         borderRadius: '20px',
-        padding: '20px',
+        padding: '16px 0px 0px 0px',
+        height: '300px',
         display: 'flex',
         flexDirection: 'column',
         gap: '16px',
@@ -268,6 +269,7 @@ export function PlatformValueChart() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <motion.div 
             style={{
+              padding: '8px',
               width: '40px',
               height: '40px',
               borderRadius: '12px',
@@ -279,9 +281,9 @@ export function PlatformValueChart() {
             whileHover={{ scale: 1.05 }}
           >
             <img 
-              src="https://cdn.worldvectorlogo.com/logos/dribbble-icon-1.svg" 
+              src="https://png.pngtree.com/png-vector/20190110/ourlarge/pngtree-vector-basket-ball-icon-png-image_312695.jpg" 
               alt="Dribbble" 
-              style={{ width: '22px', height: '22px' }}
+              style={{ width: '62px', height: '52px', paddingLeft: '16px' }}
             />
           </motion.div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
@@ -327,7 +329,7 @@ export function PlatformValueChart() {
       </div>
 
       {/* Content */}
-      <div style={{ display: 'flex', gap: '0', alignItems: 'stretch' }}>
+      <div style={{ display: 'flex', gap: '0', alignItems: 'flex-end' }}>
         {/* Left Pink Stats Panel */}
         <motion.div 
           style={{
@@ -335,8 +337,10 @@ export function PlatformValueChart() {
             borderRadius: '0px 20px 0px 20px',
             padding: '16px',
             display: 'flex',
-            gap: '12px',
-            minWidth: '160px',
+            gap: '10px',
+            minWidth: '140px',
+            height: '200px',
+            marginBottom: '50px',
           }}
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -351,7 +355,7 @@ export function PlatformValueChart() {
             <span style={{
               writingMode: 'vertical-rl',
               transform: 'rotate(180deg)',
-              fontSize: '10px',
+              fontSize: '9px',
               fontWeight: 600,
               color: 'rgba(255,255,255,0.6)',
               textTransform: 'uppercase',
@@ -361,25 +365,25 @@ export function PlatformValueChart() {
           </div>
 
           {/* Stats Column */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-              <span style={{ fontSize: '11px', fontWeight: 500, color: 'rgba(255,255,255,0.7)' }}>Revenue</span>
-              <span style={{ fontSize: '22px', fontWeight: 700, color: '#FFFFFF' }}>$18,552</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+              <span style={{ fontSize: '10px', fontWeight: 500, color: 'rgba(255,255,255,0.7)' }}>Revenue</span>
+              <span style={{ fontSize: '18px', fontWeight: 700, color: '#FFFFFF' }}>$18,552</span>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-              <span style={{ fontSize: '11px', fontWeight: 500, color: 'rgba(255,255,255,0.7)' }}>Leads</span>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
-                <span style={{ fontSize: '16px', fontWeight: 700, color: '#FFFFFF' }}>373</span>
-                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>97/276</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+              <span style={{ fontSize: '10px', fontWeight: 500, color: 'rgba(255,255,255,0.7)' }}>Leads</span>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px' }}>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF' }}>373</span>
+                <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)' }}>97/276</span>
               </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-              <span style={{ fontSize: '11px', fontWeight: 500, color: 'rgba(255,255,255,0.7)' }}>Win/lose</span>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
-                <span style={{ fontSize: '16px', fontWeight: 700, color: '#FFFFFF' }}>16%</span>
-                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>51/318</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+              <span style={{ fontSize: '10px', fontWeight: 500, color: 'rgba(255,255,255,0.7)' }}>Win/lose</span>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px' }}>
+                <span style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF' }}>16%</span>
+                <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)' }}>51/318</span>
               </div>
             </div>
           </div>

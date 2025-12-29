@@ -257,47 +257,19 @@ export default function Sidebar() {
               </div>
             </motion.div>
           )}
-        </div>
-      </div>
 
-      {/* Manage Folders */}
-      <div className="fishbone-section manage-section">
-        <div className="fishbone-item">
-          <div className="fishbone-branch"></div>
-          <motion.button 
-            className="fishbone-label"
-            style={{ backgroundColor: '#f3efee' }}
-            whileHover={{ backgroundColor: '#e8e2e1' }}
-          >
-            Manage folders
-          </motion.button>
+          {/* Manage Folders - Connected to same fishbone line */}
+          <div className="fishbone-item">
+            <div className="fishbone-branch"></div>
+            <motion.button 
+              className="fishbone-label"
+              style={{ backgroundColor: '#f3efee' }}
+              whileHover={{ backgroundColor: '#e8e2e1' }}
+            >
+              Manage folders
+            </motion.button>
+          </div>
         </div>
-      </div>
-
-      {/* Bottom Icons */}
-      <div className="sidebar-bottom">
-        <motion.button 
-          className="bottom-icon-btn notification"
-          whileHover={{ backgroundColor: '#f9fafb', scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-            <circle cx="11" cy="11" r="9" stroke="#6B7280" strokeWidth="1.3"/>
-            <circle cx="11" cy="8" r="3" stroke="#6B7280" strokeWidth="1.2"/>
-            <path d="M5 18C5 15 7.5 13 11 13C14.5 13 17 15 17 18" stroke="#6B7280" strokeWidth="1.2"/>
-          </svg>
-          <span className="notif-dot"></span>
-        </motion.button>
-        <motion.button 
-          className="bottom-icon-btn"
-          whileHover={{ backgroundColor: '#f9fafb', scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <circle cx="10" cy="10" r="2" stroke="#6B7280" strokeWidth="1.3"/>
-            <path d="M10 1V3M10 17V19M1 10H3M17 10H19M3.5 3.5L5 5M15 15L16.5 16.5M3.5 16.5L5 15M15 5L16.5 3.5" stroke="#6B7280" strokeWidth="1.3" strokeLinecap="round"/>
-          </svg>
-        </motion.button>
       </div>
     </motion.aside>
   );

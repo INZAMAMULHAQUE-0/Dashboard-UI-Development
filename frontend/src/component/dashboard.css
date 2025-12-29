@@ -43,10 +43,12 @@ button:active {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  position: sticky;
+  position: fixed;
+  left: 0;
   top: 0;
   padding: 16px 0;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .icon-sidebar-top {
@@ -61,6 +63,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  margin-top: auto;
 }
 
 .icon-sidebar-btn {
@@ -140,6 +143,7 @@ button:active {
   height: 100vh;
   position: sticky;
   top: 0;
+  margin-left: 56px;
   overflow: hidden;
 }
 
@@ -538,8 +542,8 @@ button:active {
 }
 
 .manage-section {
-  margin-top: 4px;
-  padding-top: 4px;
+  margin-top: 0;
+  padding-top: 0;
   border-top: none;
 }
 
@@ -616,10 +620,10 @@ button:active {
 /* ========== MAIN CONTENT ========== */
 .main {
   flex: 1;
-  padding: 20px 24px;
+  padding: 10px 16px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   overflow-x: hidden;
   min-width: 0;
   width: calc(100vw - 276px);
@@ -630,11 +634,11 @@ button:active {
 .dashboard-content {
   background: #fcfcfc;
   border: 1px solid #E5E7EB;
-  border-radius: 16px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 12px 16px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 /* ========== TOPBAR ========== */
@@ -642,7 +646,7 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 20px;
+  padding: 8px 16px;
   background: #f3efee;
 }
 
@@ -819,7 +823,7 @@ button:active {
 }
 
 .page-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: #111827;
 }
@@ -827,7 +831,7 @@ button:active {
 .timeframe-section {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .toggle-label {
@@ -891,8 +895,8 @@ button:active {
 /* ========== CONTENT GRID ========== */
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: 16px;
+  grid-template-columns: 1fr 360px;
+  gap: 12px;
 }
 
 .content-grid.single-column {
@@ -907,13 +911,13 @@ button:active {
 .left-column {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .right-column {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .right-column .reports-panel-full {
@@ -946,15 +950,15 @@ button:active {
 /* ========== CARDS ========== */
 .card {
   background: #fff;
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 10px;
+  padding: 12px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 /* ========== STATS ROW ========== */
 .stats-row {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -964,8 +968,8 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 0;
-  margin-bottom: 16px;
+  padding: 4px 0;
+  margin-bottom: 8px;
   width: 100%;
 }
 
@@ -1110,15 +1114,15 @@ button:active {
 .revenue-row {
   display: flex;
   align-items: stretch;
-  gap: 16px;
+  gap: 10px;
   width: 100%;
 }
 
 .revenue-card-full {
   flex-shrink: 0;
-  min-width: 380px;
+  min-width: 340px;
   background: #fff;
-  padding: 24px;
+  padding: 16px;
   border: none;
   box-shadow: none;
 }
@@ -1145,13 +1149,13 @@ button:active {
 }
 
 .revenue-amount .amount {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 800;
   color: #111827;
 }
 
 .revenue-amount .cents {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   color: #111827;
 }
@@ -1183,9 +1187,9 @@ button:active {
 .revenue-users {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-top: 16px;
-  padding-top: 16px;
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 10px;
   border-top: none;
   flex-wrap: wrap;
 }
@@ -1194,7 +1198,7 @@ button:active {
 .user-stats-container {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   width: 100%;
 }
 
@@ -1203,7 +1207,7 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 6px 12px;
   background: #F9FAFB;
   border-radius: 50px;
   flex: 1;
@@ -1284,20 +1288,20 @@ button:active {
 /* Top Stats Row */
 .top-stats-row {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .top-stat-card {
   flex: 1;
-  padding: 16px 20px;
-  border-radius: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 
 .top-stat-card.light {
@@ -1530,7 +1534,7 @@ button:active {
 .charts-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 8px;
   flex: 1;
 }
 
@@ -1542,14 +1546,14 @@ button:active {
 /* Two Column Layout for Charts and Reports */
 .content-grid.two-column {
   display: flex;
-  gap: 20px;
+  gap: 12px;
 }
 
 .content-grid.two-column .left-column {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .content-grid.two-column .right-column {
@@ -1559,10 +1563,10 @@ button:active {
 .panel-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding-bottom: 12px;
+  gap: 6px;
+  padding-bottom: 8px;
   border-bottom: none;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-size: 13px;
   color: #6B7280;
 }
@@ -1581,19 +1585,19 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
-  margin-bottom: 8px;
+  padding: 8px 0;
+  margin-bottom: 4px;
   position: relative;
 }
 
 .sort-dropdown-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: transparent;
   border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -1658,8 +1662,8 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
-  border-radius: 12px;
+  padding: 8px 12px;
+  border-radius: 10px;
   cursor: pointer;
   background: #fff;
   transition: all 0.15s ease;
@@ -1668,13 +1672,13 @@ button:active {
 .platform-info {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .platform-icon-img {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1682,20 +1686,20 @@ button:active {
 }
 
 .platform-icon-img img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
 
 .platform-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .platform-name {
@@ -1707,7 +1711,7 @@ button:active {
 .platform-stats-values {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .platform-amount {
@@ -1729,7 +1733,7 @@ button:active {
 }
 
 .referrer-chart .panel-header-row {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .checkbox-btn {
@@ -1752,9 +1756,9 @@ button:active {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 16px;
-  padding: 20px 0;
-  min-height: 140px;
+  gap: 12px;
+  padding: 12px 0;
+  min-height: 110px;
 }
 
 .referrer-bar-container {
@@ -1765,23 +1769,23 @@ button:active {
 }
 
 .referrer-bar-icon {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 8px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .referrer-bar-icon img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
 
 .referrer-bar {
-  width: 40px;
-  border-radius: 6px 6px 0 0;
+  width: 32px;
+  border-radius: 5px 5px 0 0;
   background: #E5E7EB;
 }
 
@@ -1797,7 +1801,7 @@ button:active {
 
 .referrer-label {
   text-align: left;
-  padding-top: 16px;
+  padding-top: 10px;
 }
 
 .referrer-label .deals-text {
@@ -1824,22 +1828,22 @@ button:active {
 .platform-value-chart {
   grid-column: 1 / -1;
   background: #fff;
-  border-radius: 16px;
-  padding: 20px 24px;
+  border-radius: 12px;
+  padding: 12px 16px;
 }
 
 .chart-header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding-bottom: 16px;
+  gap: 10px;
+  padding-bottom: 10px;
 }
 
 .chart-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   background: linear-gradient(135deg, #FCE7F3 0%, #FBCFE8 100%);
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1914,8 +1918,8 @@ button:active {
 .chart-content {
   display: flex;
   align-items: flex-end;
-  gap: 20px;
-  padding: 16px 0 0 0;
+  gap: 16px;
+  padding: 10px 0 0 0;
 }
 
 .chart-tooltip-section {
@@ -1926,9 +1930,9 @@ button:active {
 .tooltip-box {
   background: #d82f5b;
   color: #fff;
-  padding: 16px 18px;
-  border-radius: 14px 14px 14px 0;
-  min-width: 130px;
+  padding: 12px 14px;
+  border-radius: 12px 12px 12px 0;
+  min-width: 110px;
 }
 
 .tooltip-title {
@@ -1938,10 +1942,10 @@ button:active {
 }
 
 .tooltip-value {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .tooltip-row {
@@ -1982,17 +1986,17 @@ button:active {
 .bar-chart-area {
   display: flex;
   flex: 1;
-  gap: 16px;
+  gap: 12px;
 }
 
 .bar-chart {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  gap: 32px;
+  gap: 24px;
   flex: 1;
-  height: 160px;
-  padding-bottom: 8px;
+  height: 130px;
+  padding-bottom: 6px;
 }
 
 .month-group {
@@ -2086,10 +2090,10 @@ button:active {
 .reports-panel-full {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   background: linear-gradient(135deg, #f4ebf5 0%, #fbedeb 100%);
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 12px;
+  padding: 12px;
 }
 
 .sales-table {
@@ -2102,8 +2106,8 @@ button:active {
 .table-header {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 0.6fr 1.2fr;
-  gap: 8px;
-  padding: 8px 12px;
+  gap: 6px;
+  padding: 6px 10px;
   font-size: 11px;
   color: #9CA3AF;
   font-weight: 500;
@@ -2111,30 +2115,30 @@ button:active {
 
 .table-row {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 0.6fr 1.2fr 36px;
-  gap: 8px;
-  padding: 12px;
+  grid-template-columns: 1.5fr 1fr 1fr 0.6fr 1.2fr 32px;
+  gap: 6px;
+  padding: 8px 10px;
   align-items: center;
   font-size: 13px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 10px;
   transition: background-color 0.2s ease;
 }
 
 .table-row.highlight {
   background: transparent;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .user-cell {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .avatar-img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -2210,8 +2214,8 @@ button:active {
 
 .badges-row {
   display: flex;
-  gap: 8px;
-  padding: 12px 0;
+  gap: 6px;
+  padding: 6px 0;
 }
 
 .badge-tag {
@@ -2240,7 +2244,7 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .section-title {
@@ -2273,19 +2277,19 @@ button:active {
 /* Platforms Grid - Matching the image exactly */
 .platforms-grid {
   display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 12px;
+  grid-template-columns: 120px 1fr;
+  gap: 10px;
   align-items: start;
 }
 
 /* Dribbble Card - Left side with pink tint */
 .platform-card-dribbble {
   background: linear-gradient(135deg, #FDF2F8 0%, #FCE7F3 100%);
-  border-radius: 14px;
-  padding: 14px;
+  border-radius: 12px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   transition: all 0.2s ease;
   height: 100%;
 }
@@ -2293,16 +2297,16 @@ button:active {
 .dribbble-header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .dribbble-header img {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
 }
 
 .dribbble-header span {
-  font-size: 13px;
+  font-size: 12px;
   color: #374151;
   font-weight: 500;
 }
@@ -2310,17 +2314,17 @@ button:active {
 .dribbble-stats {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 1px;
 }
 
 .dribbble-percent {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   color: #111827;
 }
 
 .dribbble-amount {
-  font-size: 15px;
+  font-size: 13px;
   color: #10B981;
   font-weight: 600;
 }
@@ -2329,15 +2333,15 @@ button:active {
 .platforms-right-grid {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 /* Instagram Card - bordered */
 .platform-card-instagram {
   background: #fff;
   border: 1px solid #E5E7EB;
-  border-radius: 12px;
-  padding: 10px 14px;
+  border-radius: 10px;
+  padding: 8px 12px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -2451,13 +2455,13 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .chart-expand-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
   background: #F3F4F6;
   display: flex;
   align-items: center;
@@ -2479,12 +2483,12 @@ button:active {
 
 .sparkline {
   position: relative;
-  height: 80px;
+  height: 60px;
 }
 
 .sparkline-svg {
   width: 100%;
-  height: 60px;
+  height: 50px;
 }
 
 .gradient-bar {

@@ -96,7 +96,7 @@ export default function ReportsPanel(){
           <span className="kpi-value">0.84</span>
           <div className="wl">
             <span className="wl-percent">31%</span>
-            <span className="badge-num green">12</span>
+            <span className="badge-num dark">12</span>
             <span className="wl-loss">29</span>
           </div>
           <motion.button 
@@ -164,7 +164,7 @@ export default function ReportsPanel(){
             }}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="11" fill="#14B8A6" />
+              <circle cx="12" cy="12" r="11" fill="#c3335e" />
               <path d="M8 10L12 14L16 10" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </motion.button>
