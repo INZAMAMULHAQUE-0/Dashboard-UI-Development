@@ -1,6 +1,79 @@
 import React from 'react';
 import { motion } from 'motion/react';
 
+export function UserTabsBar() {
+  return (
+    <div className="user-tabs-bar">
+      <div className="user-tabs-left">
+        <motion.button 
+          className="add-user-btn"
+          whileHover={{ scale: 1.05, backgroundColor: '#111827' }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Add" className="tab-icon" />
+        </motion.button>
+        
+        <motion.div 
+          className="user-tab"
+          whileHover={{ backgroundColor: '#111827' }}
+        >
+          <img className="user-tab-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Armin" />
+          <span className="user-tab-name">Armin A.</span>
+        </motion.div>
+        
+        <motion.div 
+          className="user-tab active"
+          whileHover={{ backgroundColor: '#111827' }}
+        >
+          <img className="user-tab-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Eren" />
+          <span className="user-tab-name">Eren Y.</span>
+        </motion.div>
+        
+        <motion.div 
+          className="user-tab highlight"
+          whileHover={{ backgroundColor: '#111827' }}
+        >
+          <img className="user-tab-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mikasa" />
+          <span className="user-tab-name">Mikasa A.</span>
+        </motion.div>
+        
+        <motion.div 
+          className="user-tab icon-only"
+          whileHover={{ scale: 1.05, backgroundColor: '#fff' }}
+        >
+          <div className="user-tab-icon">C</div>
+        </motion.div>
+      </div>
+      
+      <div className="user-tabs-right">
+        <motion.button 
+          className="tab-action-btn"
+          whileHover={{ backgroundColor: '#111827' }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="Users" className="tab-icon" />
+        </motion.button>
+        
+        <motion.button 
+          className="tab-action-btn"
+          whileHover={{ backgroundColor: '#111827' }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download" className="tab-icon" />
+        </motion.button>
+        
+        <motion.button 
+          className="tab-action-btn"
+          whileHover={{ backgroundColor: '#111827' }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724954.png" alt="Share" className="tab-icon" />
+        </motion.button>
+      </div>
+    </div>
+  );
+}
+
 export function RevenueCard() {
   return (
     <div className="revenue-row">

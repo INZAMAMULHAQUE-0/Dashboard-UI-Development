@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 
 const sharedItems = [
-  { label: 'Cargo2go', color: '#10B981' },
-  { label: 'Cloudz3r', color: '#EF4444', badge: 2 },
-  { label: 'Idioma', color: '#8B5CF6' },
-  { label: 'Syllables', color: '#F59E0B' },
-  { label: 'x-0b', color: 'rgba(99, 102, 241, 1)' },
+  { label: 'Cargo2go',  },
+  { label: 'Cloudz3r',  badge: 2 },
+  { label: 'Idioma',  },
+  { label: 'Syllables',  },
+  { label: 'x-0b',  },
 ];
 
 export default function Sidebar() {
@@ -107,8 +107,8 @@ export default function Sidebar() {
           <div className="fishbone-branch"></div>
           <motion.button 
             className="fishbone-label active"
-            style={{ backgroundColor: '#ffffff' }}
-            whileHover={{ backgroundColor: '#f9fafb' }}
+            style={{ backgroundColor: '#f3efee' }}
+            whileHover={{ backgroundColor: '#e8e2e1' }}
           >
             Codename
           </motion.button>
@@ -119,8 +119,8 @@ export default function Sidebar() {
           <div className="fishbone-branch"></div>
           <motion.button 
             className="fishbone-label expandable"
-            style={{ backgroundColor: '#ffffff' }}
-            whileHover={{ backgroundColor: '#f9fafb' }}
+            style={{ backgroundColor: '#f3efee' }}
+            whileHover={{ backgroundColor: '#e8e2e1' }}
             onClick={() => toggleSection('sharedWithMe')}
           >
             Shared with me
@@ -143,7 +143,8 @@ export default function Sidebar() {
                 <div className="fishbone-branch nested"></div>
                 <motion.button 
                   className="fishbone-label"
-                  whileHover={{ backgroundColor: '#f9fafb' }}
+                  style={{ backgroundColor: '#f3efee' }}
+                  whileHover={{ backgroundColor: '#e8e2e1' }}
                 >
                   <span className="color-dot" style={{ backgroundColor: item.color }}></span>
                   {item.label}
@@ -173,7 +174,8 @@ export default function Sidebar() {
             <div className="fishbone-branch"></div>
             <motion.button 
               className="fishbone-label expandable"
-              whileHover={{ backgroundColor: '#f9fafb' }}
+              style={{ backgroundColor: '#f3efee' }}
+              whileHover={{ backgroundColor: '#e8e2e1' }}
               onClick={() => toggleSection('shareWithMe')}
             >
               Share with me
@@ -192,13 +194,13 @@ export default function Sidebar() {
             >
               <div className="fishbone-item nested">
                 <div className="fishbone-branch nested"></div>
-                <motion.button className="fishbone-label" whileHover={{ backgroundColor: '#f9fafb' }}>
+                <motion.button className="fishbone-label" style={{ backgroundColor: '#f3efee' }} whileHover={{ backgroundColor: '#e8e2e1' }}>
                   Deals by user
                 </motion.button>
               </div>
               <div className="fishbone-item nested">
                 <div className="fishbone-branch nested"></div>
-                <motion.button className="fishbone-label" whileHover={{ backgroundColor: '#f9fafb' }}>
+                <motion.button className="fishbone-label" style={{ backgroundColor: '#f3efee' }} whileHover={{ backgroundColor: '#e8e2e1' }}>
                   Deal duration
                 </motion.button>
               </div>
@@ -210,8 +212,8 @@ export default function Sidebar() {
             <div className="fishbone-branch"></div>
             <motion.button 
               className="fishbone-label expandable"
-              style={{ backgroundColor: '#ffffff' }}
-              whileHover={{ backgroundColor: '#f9fafb' }}
+              style={{ backgroundColor: '#f3efee' }}
+              whileHover={{ backgroundColor: '#e8e2e1' }}
               onClick={() => toggleSection('myReports')}
             >
               My reports
@@ -230,25 +232,25 @@ export default function Sidebar() {
             >
               <div className="fishbone-item nested">
                 <div className="fishbone-branch nested"></div>
-                <motion.button className="fishbone-label" whileHover={{ backgroundColor: '#f9fafb' }}>
+                <motion.button className="fishbone-label" style={{ backgroundColor: '#f3efee' }} whileHover={{ backgroundColor: '#e8e2e1' }}>
                   Emails received
                 </motion.button>
               </div>
               <div className="fishbone-item nested">
                 <div className="fishbone-branch nested"></div>
-                <motion.button className="fishbone-label" whileHover={{ backgroundColor: '#f9fafb' }}>
+                <motion.button className="fishbone-label" style={{ backgroundColor: '#f3efee' }} whileHover={{ backgroundColor: '#e8e2e1' }}>
                   Deal duration
                 </motion.button>
               </div>
               <div className="fishbone-item nested">
                 <div className="fishbone-branch nested"></div>
-                <motion.button className="fishbone-label highlight" whileHover={{ backgroundColor: '#FEF2F2' }}>
+                <motion.button className="fishbone-label highlight" style={{ backgroundColor: '#f3efee' }} whileHover={{ backgroundColor: '#FEF2F2' }}>
                   New report
                 </motion.button>
               </div>
               <div className="fishbone-item nested">
                 <div className="fishbone-branch nested"></div>
-                <motion.button className="fishbone-label" whileHover={{ backgroundColor: '#f9fafb' }}>
+                <motion.button className="fishbone-label" style={{ backgroundColor: '#f3efee' }} whileHover={{ backgroundColor: '#e8e2e1' }}>
                   Analytics
                   <span className="badge-blue">7</span>
                 </motion.button>
@@ -264,7 +266,8 @@ export default function Sidebar() {
           <div className="fishbone-branch"></div>
           <motion.button 
             className="fishbone-label"
-            whileHover={{ backgroundColor: '#f9fafb' }}
+            style={{ backgroundColor: '#f3efee' }}
+            whileHover={{ backgroundColor: '#e8e2e1' }}
           >
             Manage folders
           </motion.button>
