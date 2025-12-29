@@ -24,11 +24,11 @@ export default function Topbar() {
       <div className="topbar-right">
         <motion.button 
           className="topbar-icon-btn"
-          whileHover={{ backgroundColor: '#f3f4f6' }}
+          whileHover={{ backgroundColor: '#f5f5f5ff' }}
           whileTap={{ scale: 0.95 }}
         >
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path d="M2 4H16M2 9H16M2 14H16" stroke="#6B7280" strokeWidth="1.5" strokeLinecap="round"/>
+            <path d="M2 4H16M2 9H16M2 14H16" stroke="#141517ff" strokeWidth="1.5" strokeLinecap="round"/>
           </svg>
         </motion.button>
         <motion.div 
